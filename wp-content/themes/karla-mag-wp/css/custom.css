@@ -1,0 +1,110 @@
+/* Type & Color
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.neuton {font-family: "Neuton", serif;}
+.neuton.light {font-weight: 300;}
+.light_grey {color: #9B9B9B;}
+
+/* Layout & Helpers
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.align_center {text-align: center;}
+
+/* Header & Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#header {text-align: center;}
+#header h2 {margin-top: 1.2rem; margin-bottom: 1.2rem;} /* Main title */
+#header #menu {border-top: 1px solid #DEDEDE; border-bottom: 1px solid #DEDEDE;}
+#menu ul {	position: relative; top: 20px;}
+#menu ul li {	display: inline; padding: 0 10px; font-size: 14px;}
+#menu ul li.active {font-weight: bold;}
+
+/* Home
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#home_banner {
+	padding-top: 20px;
+	margin-bottom: 60px;
+	background-color: #f0f0f0;
+}
+#home_banner .container {
+	padding: 20px 0;
+	background-image: url('../imgs/karla_main_back.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #f0f0f0;
+  background-blend-mode: multiply;
+	min-height: 560px;
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#footer {margin-top: 100px;}
+
+#footer .go_up {
+	border-top: 1px solid #DEDEDE;
+	border-bottom: 1px solid #DEDEDE;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 60px;
+}
+
+#footer .copyright { text-align: center; margin: 60px 0;}
+
+/* Posts Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.post_list li {	list-style: none; text-align: center; position: relative;}
+.post_list p.category {
+	display: inline;
+	position: relative;
+	top:10px;
+	z-index: 2;
+	border: 2px solid white;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 10px 20px;
+	background-color: #D6FFAA;
+}
+
+/* Single Post
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#single_post_body {
+	margin-top: 60px;
+}
+.post_content {
+	position: relative;
+	top: -100px;
+	background-color: white;
+	padding: 0px 80px 60px 80px;
+}
+
+.single_post_meta {
+	text-align: center;
+}
+
+.single_post_meta > p.category {
+	display: inline;
+	position: relative;
+	top:-10px;
+	z-index: 2;
+	border: 2px solid white;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 10px 20px;
+	background-color: #D6FFAA;
+}
+
+.social_share {
+	border: 2px solid #EFEFEF;
+	padding: 30px 20px;
+	text-align: center;
+	width: 100%;
+}
+.social_share a {	color: white;	font-weight: bold; padding: 10px 20px; border-radius: 5pt;}
+.social_share a:first-child {margin-right: 20px;}
+
+.social_facebook {background-color: #3A589E;}
+.social_pinterest {background-color: #CB2126;}
+
+
+blockquote {
+	font-size: 18px;
+	-webkit-margin-start: 0;
+}
