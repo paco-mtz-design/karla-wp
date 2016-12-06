@@ -25,7 +25,7 @@
 					?>
 				</p>
 				<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-					<?php the_post_thumbnail('medium', array( 'class' => 'u-full-width')); // Fullsize image for the single post ?>
+					<?php the_post_thumbnail('feeds-thumb', array( 'class' => 'u-full-width')); // Fullsize image for the single post ?>
 				<?php endif; ?>
 				<h4 class="neuton"><?php the_title(); ?></h4>
 			</a>
