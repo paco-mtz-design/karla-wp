@@ -108,3 +108,7 @@ blockquote {
 	font-size: 18px;
 	-webkit-margin-start: 0;
 }
+
+img.u-full-width {
+	height: initial;
+}
