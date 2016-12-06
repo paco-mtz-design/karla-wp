@@ -5,23 +5,38 @@
 		<h3 class="light_grey">Relacionado</h3>
 	</div>
 
+
 	<ul class="post_list row">
-		<li class="four columns"><a href="#">
-			<p class="category">Cocinando con Karla</p>
-			<img class="u-full-width" src="<?php echo get_template_directory_uri(); ?>/imgs/sample_image.jpg" alt="Sample Image">
-			<h4 class="neuton">Desayuno saludable para épocas decembrinas</h4>
-		</a></li>
-		<li class="four columns"><a href="#">
-			<p class="category">Cocinando con Karla</p>
-			<img class="u-full-width" src="<?php echo get_template_directory_uri(); ?>/imgs/sample_image.jpg" alt="Sample Image">
-			<h4 class="neuton">Desayuno saludable para épocas decembrinas</h4>
-		</a></li>
-		<li class="four columns"><a href="#">
-			<p class="category">Cocinando con Karla</p>
-			<img class="u-full-width" src="<?php echo get_template_directory_uri(); ?>/imgs/sample_image.jpg" alt="Sample Image">
-			<h4 class="neuton">Desayuno saludable para épocas decembrinas</h4>
-		</a></li>
+		<?php
+			$args = array(
+				'orderby' => 'title',
+				'order'   => 'DESC',
+			);
+			$my_query = new WP_Query($args);
+			if( $my_query->have_posts() ) {
+				while ($my_query->have_posts()) : $my_query->the_post();
+		?>
+		<li class="four columns">
+			<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+				<p class="category">
+					<?php
+						$cat_name = get_the_category();
+						echo($cat_name[0]->name);
+					?>
+				</p>
+				<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+					<?php the_post_thumbnail('medium', array( 'class' => 'u-full-width')); // Fullsize image for the single post ?>
+				<?php endif; ?>
+				<h4 class="neuton"><?php the_title(); ?></h4>
+			</a>
+		</li>
+		<?php
+			endwhile;
+		}
+			wp_reset_query();
+		?>
 	</ul>
+
 
 	<div class="align_center">
 		<a class="button" href="#">Ver Todos los Artículos Recientes</a>
