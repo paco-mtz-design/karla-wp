@@ -8,7 +8,7 @@
 		<div class="featured_image">
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<?php the_post_thumbnail('full', array( 'class' => 'u-full-width', 'alt' => 'Karla')); // Fullsize image for the single post ?>
+				<?php the_post_thumbnail('full', array( 'class' => 'u-full-width')); // Fullsize image for the single post ?>
 			<?php endif; ?>
 			<!-- /post thumbnail -->
 		</div>
@@ -30,7 +30,7 @@
 			<blockquote class="excerpt"><?php echo get_the_excerpt(); // Dynamic Content ?></blockquote>
 			<?php the_content(); // Dynamic Content ?>
 			<?php get_template_part('social-sharer') ?>
-			
+
 		</div>
 		<!-- /Cuerpo del Artículo -->
 
