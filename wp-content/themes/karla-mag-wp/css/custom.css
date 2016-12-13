@@ -4,6 +4,10 @@
 .neuton.light {font-weight: 300;}
 .light_grey {color: #9B9B9B;}
 
+/* Grids
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.vertical_center {position: relative; top: 50%; transform: translateY(-50%);}
+
 /* Layout & Helpers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .align_center {text-align: center;}
@@ -75,9 +79,7 @@
 	padding: 0px 80px 60px 80px;
 }
 
-.single_post_meta {
-	text-align: center;
-}
+.single_post_meta {	text-align: center;}
 
 .single_post_meta > p.category {
 	display: inline;
@@ -104,11 +106,20 @@
 .social_pinterest {background-color: #CB2126;}
 
 
-blockquote {
-	font-size: 18px;
-	-webkit-margin-start: 0;
-}
+blockquote {font-size: 18px;	-webkit-margin-start: 0;}
+img.u-full-width {height: initial;}
 
-img.u-full-width {
-	height: initial;
+/* Category Template
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.category_banner { margin-top: 60px; margin-bottom: 60px;}
+.category_banner .row {height: 500px;}
+#category_image {
+	background-size: cover;
+	height: 500px;
 }
+@media (max-width: 400px) {
+	#category_image {height: 200px;}
+	.category_banner .row {height: 120px;}
+}
+.category_meta {text-align: center; height: 100%; padding: 0 20px;}
+.archive_meta p { text-transform: uppercase; color: #747474; font-weight: bold; margin-top: -30px;}
