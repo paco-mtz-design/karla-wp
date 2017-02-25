@@ -20,7 +20,8 @@
 
 	<header id="header">
 		<h2 class="neuton light">Karla Martínez<span class="light_grey">.com</span></h2>
-		<nav id="menu">
+		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_id' => 'menu' ) ); ?>
+		<!-- <nav id="menu">
 			<ul>
 				<li class="active"><a href="#">Inicio</a></li>
 				<li><a href="#">Cocinando con Karla</a></li>
@@ -29,5 +30,5 @@
 				<li><a href="#">Invitados Deluxe</a></li>
 				<li><a href="#">No Estás Sola</a></li>
 			</ul>
-		</nav>
+		</nav> -->
 	</header>

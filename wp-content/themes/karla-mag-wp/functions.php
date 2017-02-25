@@ -10,4 +10,8 @@ if (function_exists('add_theme_support'))
 	add_image_size( 'feeds-thumb', 560, 340, true ); // Hard Crop Mode
 }
 
+function register_my_menu() {
+	register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
 ?>
