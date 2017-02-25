@@ -19,7 +19,7 @@
 <body <?php body_class(); ?>>
 
 	<header id="header">
-		<h2 class="neuton light">Karla Martínez<span class="light_grey">.com</span></h2>
+		<h2 class="neuton light"><a href="<?php echo home_url(); ?>" title="<?php wp_title(''); ?>">Karla Martínez<span class="light_grey">.com</span></a></h2>
 		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_id' => 'menu' ) ); ?>
 		<!-- <nav id="menu">
 			<ul>
