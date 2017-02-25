@@ -26,17 +26,21 @@
 #home_banner {
 	padding-top: 20px;
 	margin-bottom: 60px;
-	background-color: #f0f0f0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 #home_banner .container {
 	padding: 20px 0;
-	background-image: url('../imgs/karla_main_back.png');
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-color: #f0f0f0;
-  background-blend-mode: multiply;
 	min-height: 560px;
 }
+
+#home_banner h1, #home_banner p {
+	background-color: rgba(255, 255, 255, .5);
+	padding: 0 5px;
+}
+
+
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

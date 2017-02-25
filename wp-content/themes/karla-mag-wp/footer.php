@@ -1,15 +1,16 @@
 <footer id="footer">
+	<?php $frontpage_id = get_option('page_on_front'); ?>
 	<div class="go_up"><a href="#"><small>Volver arriba ↑</small></a></div>
 	<div class="container">
 		<div class="row">
-			<img class="four columns offset-by-two" src="<?php echo get_template_directory_uri(); ?>/imgs/karla_profile.png" alt="Karla"></img>
+			<img class="four columns offset-by-two" src="<?php echo the_field('foto_de_seccion_acerca', $frontpage_id) ?>" alt="Karla"></img>
 			<div class="four columns">
-				<h5><strong>Acerca de Karla</strong></h5>
-				<p class="neuton">Karla es una persona de muchos y muy diversos talentos, y con una personalidad magnética, originaria de Ciudad Juárez, Chihuahua. Actualmente es co-anfitriona del pupular show matutino ‘Despierta America’ en la cadena Univisión.</p>
+				<h5><strong><?php echo(the_field('titulo_seccion_acerca', $frontpage_id)); ?></strong></h5>
+				<p class="neuton"><?php echo(the_field('texto_seccion_acerca', $frontpage_id));?></p>
 			</div>
 		</div>
 		<div class="row copyright">
-			<small class="eight columns offset-by-two">© Karla Martínez 2016. <a href="#">Ver nuestro aviso de privacidad.</a></small>
+			<small class="eight columns offset-by-two"><?php echo(the_field('mensaje_de_copyright', $frontpage_id));?><a href="<?php echo(the_field('liga_al_aviso_de_privacidad', $frontpage_id));?>">Ver nuestro <strong>Aviso de Privacidad</strong></a>.</small>
 		</div>
 	</div>
 </footer>
