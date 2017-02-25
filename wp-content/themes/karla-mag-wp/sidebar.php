@@ -11,6 +11,7 @@
 			$args = array(
 				'orderby' => 'title',
 				'order'   => 'DESC',
+				'posts_per_page' => 3
 			);
 			$my_query = new WP_Query($args);
 			if( $my_query->have_posts() ) {
