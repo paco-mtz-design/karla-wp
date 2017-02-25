@@ -71,6 +71,14 @@
 	background-color: #D6FFAA;
 }
 
+/* Single Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page_content {
+	position: relative;
+	background-color: white;
+	padding: 0px 80px 60px 80px;
+}
+
 /* Single Post
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #single_post_body {
