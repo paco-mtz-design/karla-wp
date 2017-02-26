@@ -34,7 +34,7 @@ if ( have_posts() ) : ?>
 	// The Loop
 	while ( have_posts() ) : the_post(); ?>
 
-		<li class="four columns">
+		<li class="four columns no_initial_margin">
 			<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 				<p class="category">
 					<?php

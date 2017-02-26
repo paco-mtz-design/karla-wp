@@ -42,7 +42,11 @@ li.four.columns.no_initial_margin {margin-right: 2%; !important}
 	padding: 0 5px;
 }
 
-
+/* Contact Form
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+form p {margin-bottom: 0}
+form input, form textarea {width: 100%}
+form textarea {min-height: 100px;}
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -118,7 +122,6 @@ li.four.columns.no_initial_margin {margin-right: 2%; !important}
 
 .social_facebook {background-color: #3A589E;}
 .social_pinterest {background-color: #CB2126;}
-
 
 blockquote {font-size: 18px;	-webkit-margin-start: 0;}
 img.u-full-width {height: initial;}
