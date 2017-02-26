@@ -74,7 +74,7 @@
 		</ul>
 
 		<div class="align_center">
-			<a class="button" href="#">Ver Todos los Artículos Recientes</a>
+			<a class="button" href="<?php echo get_template_directory_uri(); ?>/archivo">Ver Todos los Artículos Recientes</a>
 		</div>
 
 	</div>

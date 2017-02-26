@@ -11,6 +11,8 @@
 /* Layout & Helpers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .align_center {text-align: center;}
+/* Listado en Archivo + Categoría */
+li.four.columns.no_initial_margin {margin-right: 2%; !important}
 
 /* Header & Menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
