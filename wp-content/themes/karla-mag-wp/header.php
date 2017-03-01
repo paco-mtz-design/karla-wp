@@ -29,16 +29,6 @@
 	</script>
 
 	<header id="header">
-		<h2 class="neuton light"><a href="<?php echo home_url(); ?>" title="<?php wp_title(''); ?>">Karla Martínez<span class="light_grey">.com</span></a></h2>
+		<h2 class="neuton light"><a href="<?php echo home_url(); ?>" title="<?php wp_title(''); ?>">Karla Martínez<span class="light_grey">.tv</span></a></h2>
 		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_id' => 'menu' ) ); ?>
-		<!-- <nav id="menu">
-			<ul>
-				<li class="active"><a href="#">Inicio</a></li>
-				<li><a href="#">Cocinando con Karla</a></li>
-				<li><a href="#">Entre Amigas</a></li>
-				<li><a href="#">Fashion & Beauty</a></li>
-				<li><a href="#">Invitados Deluxe</a></li>
-				<li><a href="#">No Estás Sola</a></li>
-			</ul>
-		</nav> -->
 	</header>
