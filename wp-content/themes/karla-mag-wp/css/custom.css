@@ -102,6 +102,12 @@ form textarea {min-height: 100px;}
 	padding: 0px 80px 60px 80px;
 }
 
+.post_content img,
+.post_content p img {
+	width: 100%;
+	height: auto;
+}
+
 .single_post_meta {	text-align: center;}
 
 .single_post_meta > p.category {
