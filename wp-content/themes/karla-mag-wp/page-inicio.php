@@ -3,12 +3,8 @@
 	<div class="u-full-width" id="home_banner" style="background-image: url('<?php echo(the_field('foto_de_portada_inicio'));?>');">
 		<div class="container">
 			<div class="row">
-				<div class="seven columns">
+				<div class="nine columns">
 					<h1 class="neuton light"><?php echo(the_field('texto_destacado'));?></h1>
-					<div class="six columns no_initial_margin">
-						<p><?php echo(the_field('kicker_foto_de_portada'));?></p>
-						<small>Karla Martínez</small>
-					</div>
 				</div>
 			</div>
 		</div>
