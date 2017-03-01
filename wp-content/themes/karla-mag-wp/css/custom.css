@@ -89,6 +89,11 @@ form textarea {min-height: 100px;}
 	background-color: white;
 	padding: 0px 80px 60px 80px;
 }
+.page_content img,
+.page_content p img {
+	width: 100%;
+	height: auto;
+}
 
 /* Single Post
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
