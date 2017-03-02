@@ -1,0 +1,15 @@
+
+@media (max-width: 600px) {
+
+	/* Posts */
+	.post_content.ten.columns {padding: 0 0 60px 0;}
+	.page_content.ten.columns {padding: 0 0 60px 0;}
+
+	/* Categories */
+	#category_image {height: 200px; background-position: center;}
+	.category_banner .row {height: 120px;}
+
+	/* Homepage */
+	#home_banner h1 {line-height: 1.5em;}
+
+}
