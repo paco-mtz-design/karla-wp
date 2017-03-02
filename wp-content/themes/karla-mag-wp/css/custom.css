@@ -133,13 +133,19 @@ form textarea {min-height: 100px;}
 	border: 2px solid #EFEFEF;
 	padding: 30px 20px;
 	text-align: center;
-	width: 100%;
 }
-.social_share a {	color: white;	font-weight: bold; padding: 10px 20px; border-radius: 5pt;}
-.social_share a:first-child {margin-right: 20px;}
+.social_share a {
+	color: white;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 5pt;
+	display: inline-block;
+	margin: 0 10px 20px 10px;
+}
 
 .social_facebook {background-color: #3A589E;}
 .social_pinterest {background-color: #CB2126;}
+.social_twitter {background-color: #2ab2f5;}
 
 blockquote {font-size: 18px;	-webkit-margin-start: 0;}
 img.u-full-width {height: initial;}
