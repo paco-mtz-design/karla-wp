@@ -13,3 +13,9 @@
 	#home_banner h1 {line-height: 1.5em;}
 
 }
+
+@media all and (max-width: 900px) {
+	#nav-trigger {display: block;}
+	div#menu {display: none;}
+	nav#nav-mobile {display: block;}
+}

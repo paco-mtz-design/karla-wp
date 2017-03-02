@@ -18,10 +18,61 @@ li.four.columns.no_initial_margin {margin-right: 2%; !important}
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #header {text-align: center;}
 #header h2 {margin-top: 1.2rem; margin-bottom: 1.2rem;} /* Main title */
-#header #menu {border-top: 1px solid #DEDEDE; border-bottom: 1px solid #DEDEDE;}
+#header #menu {
+	border-top: 1px solid #DEDEDE;
+	border-bottom: 1px solid #DEDEDE;
+	position: relative;
+	z-index: 2;
+}
 #menu ul {	position: relative; top: 20px;}
 #menu ul li {	display: inline; padding: 0 10px; font-size: 14px;}
 #menu ul li.active {font-weight: bold;}
+
+#nav-trigger {display: none; text-align: center;}
+#nav-trigger span {
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: white;
+	cursor: pointer;
+	border: 1px solid #DEDEDE;
+}
+
+#nav-trigger span:hover {
+	background-color: #efefef;
+}
+#nav-trigger span.open:after {
+	border-left: solid 10px transparent;
+	border-top: none;
+	border-bottom: solid 10px #fff;
+	border-right: solid 10px transparent;
+}
+
+nav#nav-mobile {
+	position: relative;
+	display: none;
+	z-index: 3;
+}
+nav#nav-mobile ul {
+	display: none;
+	list-style-type: none;
+	position: absolute;
+	left: 15%;
+	right: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: white;
+	border: solid 1px #DEDEDE;
+}
+nav#nav-mobile li {
+	display: block;
+	padding: 5px 0;
+	margin: 0 5px;
+	border-bottom: solid 1px #DEDEDE;
+}
+nav#nav-mobile li:last-child {border-bottom: none;}
+nav#nav-mobile a {display: block; padding: 10px 30px; }
+nav#nav-mobile a:hover {background-color: #efefef;}
 
 /* Home
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

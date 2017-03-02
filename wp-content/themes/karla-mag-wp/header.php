@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" />
 
 	<link href="https://fonts.googleapis.com/css?family=Neuton:300,400,700|Open+Sans:400,400i,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </head>
 <body <?php body_class(); ?>>
@@ -29,7 +30,29 @@
 		ga('send', 'pageview');
 	</script>
 
+	<script>
+	$(document).ready(function(){
+		$("#nav-mobile").html($("#menu").html());
+		$("#nav-trigger span").click(function(){
+			if ($("nav#nav-mobile ul").hasClass("expanded")) {
+				$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+				$(this).removeClass("open");
+			} else {
+				$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+				$(this).addClass("open");
+			}
+		});
+	});
+	</script>
+
 	<header id="header">
 		<h2 class="neuton light"><a href="<?php echo home_url(); ?>" title="<?php wp_title(''); ?>">Karla Martínez<span class="light_grey">.tv</span></a></h2>
 		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_id' => 'menu' ) ); ?>
+
+		<div id="nav-trigger">
+			<span>Menu</span>
+		</div>
+
+		<nav id="nav-mobile"></nav>
+
 	</header>
