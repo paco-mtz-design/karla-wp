@@ -22,7 +22,7 @@
 	<?php else: ?>
 		<!-- Cuerpo del Artículo -->
 		<div class="post_content ten columns offset-by-one">
-			<h1>No se encontró ningún artículo, <a href="#">regresa al inicio</a>.</h1>
+			<h3>No se encontró ningún artículo, <a href="<?php echo home_url(); ?>">regresa al inicio</a>.</h3>
 		</div>
 		<!-- /Cuerpo del Artículo -->
 	<?php endif; ?>
