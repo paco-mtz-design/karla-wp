@@ -3,9 +3,6 @@
 	<div class="u-full-width" id="home_banner" style="background-image: url('<?php echo(the_field('foto_de_portada_inicio'));?>');">
 		<div class="container">
 			<div class="row">
-				<div class="nine columns">
-					<h1 class="neuton light"><?php echo(the_field('texto_destacado'));?></h1>
-				</div>
 			</div>
 		</div>
 	</div>

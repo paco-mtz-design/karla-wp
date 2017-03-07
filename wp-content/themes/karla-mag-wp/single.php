@@ -24,12 +24,14 @@
 					?>
 				</p>
 				<h2 class="neuton"><?php the_title(); ?></h2>
+				<!--
 				<p class="post_date"><?php the_time('d / m / y'); ?></p>
+				-->
 			</div>
 
 			<blockquote class="excerpt"><?php echo get_the_excerpt(); // Dynamic Content ?></blockquote>
 			<?php the_content(); // Dynamic Content ?>
-			<?php get_template_part('social-sharer') ?>
+			<?php /* get_template_part('social-sharer') */ ?>
 
 		</div>
 		<!-- /Cuerpo del Artículo -->
