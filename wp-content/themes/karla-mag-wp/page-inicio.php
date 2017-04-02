@@ -2,7 +2,13 @@
 
 	<div class="u-full-width" id="home_banner" style="background-image: url('<?php echo(the_field('foto_de_portada_inicio'));?>');">
 		<div class="container">
-			<div class="row">
+			<div class="row home_banner_info_box">
+				<div class="seven columns">
+					<h3 class="neuton light home_banner_text"><?php the_field('texto_destacado');?></h3>
+				</div>
+				<div class="five columns signature">
+					<img class="home_banner_signature" src="<?php the_field('firma_de_karla');?>">
+				</div>
 			</div>
 		</div>
 	</div>

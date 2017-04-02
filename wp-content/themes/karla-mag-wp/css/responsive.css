@@ -10,12 +10,25 @@
 	.category_banner .row {height: 120px;}
 
 	/* Homepage */
+	#home_banner {margin-bottom: 120px;}
 	#home_banner h1 {line-height: 1.5em;}
+	#home_banner .home_banner_text {top: 0px;}
+	#home_banner .signature {text-align: left;}
+	.home_banner_signature {position: auto; top: 0px;}
+	.home_banner_info_box {
+		background-color: white;
+		padding: 20px;
+		width: 80%;
+		margin: 0 auto;
+		text-align: left;
+		position: relative;
+		top: 340px;
+	}
 
 }
 
 @media all and (max-width: 900px) {
-	#nav-trigger {display: block;}
+	#nav-trigger {display: block; margin-bottom: 30px;}
 	div#menu {display: none;}
 	nav#nav-mobile {display: block;}
 }

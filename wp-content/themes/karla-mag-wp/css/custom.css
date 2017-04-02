@@ -87,16 +87,15 @@ nav#nav-mobile a:hover {background-color: #efefef;}
 	padding: 20px 0;
 	min-height: 560px;
 }
-
-#home_banner h1, #home_banner p {
-	background-color: rgba(255, 255, 255, .5);
-	padding: 0 5px;
-}
-#home_banner h1 {
+#home_banner .home_banner_text {
 	position: relative;
-	top: 300px;
-	line-height: 64px;
+	top: 60px;
+	line-height: 1.2em;
 }
+#home_banner .home_banner_text p {margin-bottom: 0px;}
+
+#home_banner .signature {text-align: right;}
+.home_banner_signature {position: relative; top: 100px;}
 
 /* Contact Form
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
