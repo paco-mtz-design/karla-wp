@@ -4,6 +4,7 @@
 	/* Posts */
 	.post_content.ten.columns {padding: 0 0 60px 0;}
 	.page_content.ten.columns {padding: 0 0 60px 0;}
+	#single_post_body .featured_image {min-height: 340px;}
 
 	/* Categories */
 	#category_image {height: 200px; background-position: center;}
