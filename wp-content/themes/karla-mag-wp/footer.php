@@ -1,6 +1,12 @@
 <footer id="footer">
 	<?php $frontpage_id = get_option('page_on_front'); ?>
-	<div class="go_up"><a href="#"><small>Volver arriba ↑</small></a></div>
+	<div class="go_up">
+		<ul class="sm_links">
+			<li><img class="icon" src="<?php echo get_template_directory_uri(); ?>/imgs/sm_facebook_icon.png"><a href="<?php echo(the_field('sm_facebook', $frontpage_id));?>">Facebook</a></li>
+			<li><img class="icon" src="<?php echo get_template_directory_uri(); ?>/imgs/sm_instagram_icon.png"><a href="<?php echo(the_field('sm_instagram', $frontpage_id));?>">Instagram</a></li>
+			<li><img class="icon" src="<?php echo get_template_directory_uri(); ?>/imgs/sm_twitter_icon.png"><a href="<?php echo(the_field('sm_twitter', $frontpage_id));?>">Twitter</a></li>
+		</ul>
+	</div>
 	<div class="container">
 		<div class="row">
 			<img class="four columns offset-by-two" src="<?php echo the_field('foto_de_seccion_acerca', $frontpage_id) ?>" alt="Karla"></img>
